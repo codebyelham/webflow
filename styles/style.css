@@ -37,6 +37,14 @@ img {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  transition: 0.4s ease;
+}
+.primery-btn:hover {
+  background-color: transparent;
+  outline: 1px solid #4e47ff;
+}
+.primery-btn:hover a {
+  color: #000000;
 }
 
 .primery-btn a {
@@ -71,9 +79,9 @@ img {
   font-weight: 900;
   font-size: 34px;
   color: #4e47ff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+}
+.navigation .nav-logo a span {
+  color: #000000;
 }
 .banner-content {
   padding-top: 158px;
@@ -158,6 +166,72 @@ img {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* user-feedback-section */
+.feedback-section {
+  margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.feedback-header h2 {
+  color: #252432;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+}
+.feedback-items {
+  display: flex;
+  gap: 20px;
+}
+.feedback-items .feedback-item {
+  width: 33.33%;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.feedback-items .rev-star {
+  display: flex;
+  gap: 5px;
+}
+.feedback-items .rev-star img {
+  width: 20px;
+}
+.feedback h5 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+.feedback p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1e1e1e;
+}
+.feedback-items .reviwer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.reviwer-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.reviwer-name h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #757575;
+}
+.reviwer-name p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b3b3b3;
+}
 /* readytofocus-section */
 .rtf-section {
   background-color: #ffffff;
@@ -230,6 +304,10 @@ form input[type='button'] {
   font-family: 'Raleway';
   color: #ffffff;
   text-transform: capitalize;
+  transition: 0.3s ease;
+}
+form input[type='button']:hover {
+  color: #000000;
 }
 
 form input[type='email']:focus,
@@ -268,6 +346,9 @@ footer {
   font-weight: 800;
   color: #4e47ff;
 }
+.footer-logo a span {
+  color: #000000;
+}
 .footer-content p {
   font-weight: 400;
   font-size: 16px;
@@ -280,10 +361,15 @@ footer {
 }
 .footer-links li {
   list-style-type: none;
+  transition: 0.3s linear;
 }
 .footer-links li a {
   color: #8987a1;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  transition: 0.3s ease;
+}
+.footer-links li:hover a{
+  color: #4e47ff;
 }
