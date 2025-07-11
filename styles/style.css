@@ -130,8 +130,11 @@ img {
 .action-img img {
   width: 100%;
   border-radius: 50px;
+  transition: 0.3s linear;
 }
-
+.action-img img:hover {
+  border-radius: 0;
+}
 /* productive-section */
 .productive-section {
   padding: 50px 80px;
@@ -193,6 +196,11 @@ img {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  transition: 0.3s linear;
+}
+.feedback-items .feedback-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .feedback-items .rev-star {
   display: flex;
@@ -218,7 +226,8 @@ img {
   align-items: center;
 }
 .reviwer-img img {
-  width: 100%;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -255,6 +264,10 @@ img {
 }
 .rtf-img img {
   border-radius: 50px;
+  transition: 0.3s ease;
+}
+.rtf-img img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 /* getintouch-section */
 .getintouch-section {
@@ -341,7 +354,7 @@ footer {
   margin-bottom: 10px;
 }
 .footer-logo a {
-  font-size: 100px;
+  font-size: 78px;
   font-family: 'Inter';
   font-weight: 800;
   color: #4e47ff;
@@ -370,6 +383,6 @@ footer {
   font-size: 16px;
   transition: 0.3s ease;
 }
-.footer-links li:hover a{
+.footer-links li:hover a {
   color: #4e47ff;
 }
