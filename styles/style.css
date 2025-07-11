@@ -34,7 +34,11 @@ img {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
+
 .primery-btn a {
   font-size: 16px;
   font-weight: 700;
@@ -48,8 +52,9 @@ img {
 }
 /* -------- header --------*/
 .hero-section {
-  width: 100%;
-  background-image: url(../Assets/Hero-bg.png);
+  min-width: 100%;
+  background-image: url(../assets/Hero-bg.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 50px;
@@ -152,6 +157,32 @@ img {
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
 }
+
+/* readytofocus-section */
+.rtf-section {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 70px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rtf-content h3 {
+  font-size: 50px;
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+.rtf-content p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  margin: 20px 0px;
+}
+.rtf-img img {
+  border-radius: 50px;
+}
+/* getintouch-section */
 .getintouch-section {
   margin-bottom: 115px;
   padding: 70px 0px;
@@ -171,7 +202,7 @@ img {
   font-weight: 700;
 }
 .getintouch-section .section-form {
-  width: 450px;
+  width: 480px;
 }
 .getintouch-section .section-form form {
   display: flex;
@@ -190,10 +221,69 @@ form input[type='text'],
 form textarea {
   padding: 32px 20px;
   border: 1px solid #d6dded;
-  border-radius: 10px;  
+  border-radius: 10px;
+  font-size: 20px;
 }
+form input[type='button'] {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Raleway';
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
 form input[type='email']:focus,
 form input[type='text']:focus,
 form textarea:focus {
   outline: 1px solid #afbddf;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* footer-section */
+footer {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 100px 0px;
+}
+.footer-section {
+  display: flex;
+  width: 550px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-logo {
+  margin-bottom: 10px;
+}
+.footer-logo a {
+  font-size: 100px;
+  font-family: 'Inter';
+  font-weight: 800;
+  color: #4e47ff;
+}
+.footer-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8987a1;
+}
+.footer-links ul {
+  margin-top: 20px;
+  display: flex;
+  gap: 48px;
+}
+.footer-links li {
+  list-style-type: none;
+}
+.footer-links li a {
+  color: #8987a1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
