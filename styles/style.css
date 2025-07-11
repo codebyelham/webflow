@@ -61,7 +61,7 @@ img {
 /* -------- header --------*/
 .hero-section {
   min-width: 100%;
-  background-image: url(../assets/Hero-bg.png);
+  background-image: url(../images/Hero-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,12 +128,9 @@ img {
   width: 100%;
 }
 .action-img img {
-  width: 100%;
+  /* width: 100%; */
   border-radius: 50px;
   transition: 0.3s linear;
-}
-.action-img img:hover {
-  border-radius: 0;
 }
 /* productive-section */
 .productive-section {
